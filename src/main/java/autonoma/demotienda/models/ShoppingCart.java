@@ -10,4 +10,20 @@ package autonoma.demotienda.models;
  */
 public class ShoppingCart {
     
+    private int id;
+
+    public ShoppingCart(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
+    
 }
