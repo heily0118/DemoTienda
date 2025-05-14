@@ -54,6 +54,14 @@ public class Product {
         this.stock = stock;
     }
     
-    
+    public void buy(){
+        
+        if (stock > 0){
+            stock --;
+        }else{
+            System.out.println("No hay mas productos");
+        }
+        
+    }
     
 }

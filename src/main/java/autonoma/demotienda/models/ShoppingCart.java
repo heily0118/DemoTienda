@@ -63,5 +63,8 @@ public class ShoppingCart {
          return productos.size();
      }
     
+     public void comprarProductos(){
+         productos.buy();
+     }
     
 }
