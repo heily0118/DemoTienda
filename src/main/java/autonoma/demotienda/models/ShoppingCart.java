@@ -73,8 +73,11 @@ public class ShoppingCart {
          return productos.size();
      }
     
-     public void comprarProductos(){
-         productos.buy();
+     public void CompraProducto(){
+         
+         for (Product producto : productos){
+            producto.buy();
+         }
      }
     
 }
