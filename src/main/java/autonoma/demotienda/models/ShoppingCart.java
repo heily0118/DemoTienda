@@ -4,11 +4,16 @@
  */
 package autonoma.demotienda.models;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author USUARIO
  */
 public class ShoppingCart {
+    
+    private User user;
+    private ArrayList<Product>productos;
     
     private int id;
 
