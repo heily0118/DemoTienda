@@ -13,13 +13,17 @@ import java.util.ArrayList;
 public class ShoppingCart {
     
     private User user;
-    private ArrayList<Product>productos;
+    private ArrayList<Product> productos;
     
     private int id;
 
-    public ShoppingCart(int id) {
+    public ShoppingCart(User user, ArrayList<Product> productos, int id) {
+        this.user = user;
+        this.productos = productos;
         this.id = id;
     }
+
+  
 
     public int getId() {
         return id;
@@ -27,6 +31,22 @@ public class ShoppingCart {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public ArrayList<Product> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(ArrayList<Product> productos) {
+        this.productos = productos;
     }
     
     public Product searchProduct(int id){
@@ -38,6 +58,20 @@ public class ShoppingCart {
         }
         return null; 
     }
+
+     public boolean agregarProducto(Product producto) {
+        return productos.add(producto);
+    }
+    
+     public boolean eliminarProducto(Product producto){
+        return  productos.remove(producto);
+         
+     }
+     
+     
+     public int obtenerCantidadProductor(){
+         return productos.size();
+     }
     
     
 }
