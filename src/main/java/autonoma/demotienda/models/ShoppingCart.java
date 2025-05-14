@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class ShoppingCart {
     
     private User user;
-    private ArrayList<Product>productos;
+    private ArrayList<Product> productos;
     
     private int id;
 
@@ -49,6 +49,16 @@ public class ShoppingCart {
         this.productos = productos;
     }
     
+    public Product searchProduct(int id){
+        for (Product producto : productos){
+            if (producto.getId() == id){
+                System.out.println("El producto " + id + "ha sido encontrado");
+                return producto;
+            }
+        }
+        return null; 
+    }
+
      public boolean agregarProducto(Product producto) {
         return productos.add(producto);
     }
