@@ -11,7 +11,7 @@ package autonoma.demotienda.exceptions;
 public class ProductOutOfStockException extends RuntimeException {
 
     public ProductOutOfStockException() {
-        super("No hay productos por comprar");
+        super("No hay productos para comprar");
     }
     
 }
