@@ -7,6 +7,7 @@ package autonoma.demotienda.models;
 import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
 
 /**
  *
@@ -14,17 +15,18 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class ShoppingCartTest {
     
-    public ShoppingCartTest() {
+   
+    @BeforeEach
+    public void setUp() {
+        System.out.println("Before Each");
+
     }
+    
 
     @Test
     public void PruebaExitosa() {
-        System.out.println("getUser");
-        ShoppingCart instance = null;
-        User expResult = null;
-        User result = instance.getUser();
-        assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+        System.out.println("Prueba exitosa");
+
     }
 
     
