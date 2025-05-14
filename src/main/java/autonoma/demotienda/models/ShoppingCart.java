@@ -29,6 +29,15 @@ public class ShoppingCart {
         this.id = id;
     }
     
+    public Product searchProduct(int id){
+        for (Product producto : productos){
+            if (producto.getId() == id){
+                System.out.println("El producto " + id + "ha sido encontrado");
+                return producto;
+            }
+        }
+        return null; 
+    }
     
     
 }
