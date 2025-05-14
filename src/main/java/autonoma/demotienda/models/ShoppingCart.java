@@ -60,7 +60,7 @@ public class ShoppingCart {
      
      
      public int obtenerCantidadProductor(){
-         
+         return productos.size();
      }
     
     
