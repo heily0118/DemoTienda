@@ -36,6 +36,12 @@ public class ShoppingCartTest {
         System.out.println("Prueba erronea");
     }
     
+
+    @Test
+    public void PruebaExitosa() {
+        System.out.println("Prueba exitosa");
+
+    }
+
    
-    
 }
