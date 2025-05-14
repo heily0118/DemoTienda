@@ -17,9 +17,13 @@ public class ShoppingCart {
     
     private int id;
 
-    public ShoppingCart(int id) {
+    public ShoppingCart(User user, ArrayList<Product> productos, int id) {
+        this.user = user;
+        this.productos = productos;
         this.id = id;
     }
+
+  
 
     public int getId() {
         return id;
@@ -27,6 +31,26 @@ public class ShoppingCart {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public ArrayList<Product> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(ArrayList<Product> productos) {
+        this.productos = productos;
+    }
+    
+     public void agregarProducto(Product producto) {
+        productos.add(producto);
     }
     
     
