@@ -49,10 +49,19 @@ public class ShoppingCart {
         this.productos = productos;
     }
     
-     public void agregarProducto(Product producto) {
-        productos.add(producto);
+     public boolean agregarProducto(Product producto) {
+        return productos.add(producto);
     }
     
+     public boolean eliminarProducto(Product producto){
+        return  productos.remove(producto);
+         
+     }
+     
+     
+     public int obtenerCantidadProductor(){
+         
+     }
     
     
 }
